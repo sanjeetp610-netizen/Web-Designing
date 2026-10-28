@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Experiment 8 - CSS Styles</title>
+
+        <style>
+            /* Element selector */
+
+            body {
+
+                font-family: Arial, sans-serif;
+
+                background-image: url("page-background.jpg");
+
+                background-size: cover;
+
+                background-position: center;
+
+                color: #222;
+
+                margin: 30px;
+
+            }
+
+
+
+            /* Class selector */
+
+            .heading {
+
+                font-family: Georgia, serif;
+
+                color: darkblue;
+
+                font-size: 30px;
+
+                text-align: center;
+
+            }
+
+
+
+            .card {
+
+                background-image: url("element-background.jpg");
+
+                background-size: cover;
+
+                padding: 20px;
+
+                border: 2px solid #4b6584;
+
+                border-radius: 10px;
+
+                margin: 20px auto;
+
+                max-width: 650px;
+
+            }
+
+
+
+            /* ID selector */
+
+            #highlight {
+
+                color: darkred;
+
+                font-weight: bold;
+
+                font-style: italic;
+
+            }
+
+
+
+            p {
+
+                font-size: 17px;
+
+                line-height: 1.6;
+
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1 class="heading">Welcome to CSS Styling</h1>
+
+
+
+        <div class="card">
+
+            <h2>About CSS</h2>
+
+            <p>CSS stands for Cascading Style Sheets. It is used to
+
+                control the appearance and layout of web pages.</p>
+
+            <p id="highlight">This paragraph uses a different font style
+
+                and text color through an ID selector.</p>
+
+        </div>
+
+    </body>
+
+</html>

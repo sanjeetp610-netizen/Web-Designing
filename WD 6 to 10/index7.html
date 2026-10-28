@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Experiment 7 - E-mail and Phone Validation</title>
+
+        <script>
+
+            function validateForm() {
+
+                const email = document.getElementById("email").value.trim();
+
+                const phone = document.getElementById("phone").value.trim();
+
+
+
+                // Basic standard e-mail pattern, e.g. student@example.com
+
+                const emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+
+                const phonePattern = /^[0-9]{10}$/;
+
+
+
+                if (!emailPattern.test(email)) {
+
+                    alert("Please enter a valid e-mail address (name@domain.com).");
+
+                    return false;
+
+                }
+
+
+
+                if (!phonePattern.test(phone)) {
+
+                    alert("Phone number must contain exactly 10 digits.");
+
+                    return false;
+
+                }
+
+
+
+                alert("E-mail and phone number are valid!");
+
+                return true;
+
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <h2>Registration Form - Experiment 7</h2>
+
+        <form onsubmit="return validateForm()">
+
+            <label for="email">E-mail:</label>
+
+            <input type="text" id="email" name="email" required>
+
+            <br><br>
+
+
+
+            <label for="phone">Phone Number:</label>
+
+            <input type="tel" id="phone" name="phone" required>
+
+            <br><br>
+
+
+
+            <button type="submit">Register</button>
+
+            <button type="reset">Reset</button>
+
+        </form>
+
+    </body>
+
+</html>
